@@ -1,1 +1,1 @@
-Verilog projects made for Digital Systems Design class
+Verilog projects made for Digital Systems Design course
