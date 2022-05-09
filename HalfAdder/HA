@@ -1,0 +1,28 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1110-g18392a46)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_0000021942ff2a10 .scope module, "HA" "HA" 2 3;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "sum";
+    .port_info 3 /OUTPUT 1 "carry";
+o0000021943026fd8 .functor BUFZ 1, C4<z>; HiZ drive
+o0000021943027008 .functor BUFZ 1, C4<z>; HiZ drive
+L_0000021942ff3420 .functor XOR 1, o0000021943026fd8, o0000021943027008, C4<0>, C4<0>;
+L_0000021943026a30 .functor AND 1, o0000021943026fd8, o0000021943027008, C4<1>, C4<1>;
+v0000021943026f30_0 .net "a", 0 0, o0000021943026fd8;  0 drivers
+v0000021943026990_0 .net "b", 0 0, o0000021943027008;  0 drivers
+v0000021942ff3380_0 .net "carry", 0 0, L_0000021943026a30;  1 drivers
+v0000021942ff2ba0_0 .net "sum", 0 0, L_0000021942ff3420;  1 drivers
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "HA.v";

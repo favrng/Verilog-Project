@@ -1,0 +1,89 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1110-g18392a46)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_000002a596212ba0 .scope module, "BDSR4bit" "BDSR4bit" 2 7;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "X";
+    .port_info 1 /INPUT 1 "clock";
+    .port_info 2 /INPUT 1 "Data";
+    .port_info 3 /OUTPUT 1 "Aplus";
+    .port_info 4 /OUTPUT 1 "Bplus";
+    .port_info 5 /OUTPUT 1 "Cplus";
+    .port_info 6 /OUTPUT 1 "Dplus";
+v000002a596212d30_0 .var "A", 0 0;
+v000002a596212dd0_0 .var "Aplus", 0 0;
+v000002a596212e70_0 .var "B", 0 0;
+v000002a596212f10_0 .var "Bplus", 0 0;
+v000002a596212fb0_0 .var "C", 0 0;
+v000002a595f3ac20_0 .var "Cplus", 0 0;
+v000002a595f3acc0_0 .var "D", 0 0;
+o000002a596247128 .functor BUFZ 1, C4<z>; HiZ drive
+v000002a595f3ad60_0 .net "Data", 0 0, o000002a596247128;  0 drivers
+v000002a595f3ae00_0 .var "Dplus", 0 0;
+o000002a596247188 .functor BUFZ 1, C4<z>; HiZ drive
+v000002a595f3aea0_0 .net "X", 0 0, o000002a596247188;  0 drivers
+o000002a5962471b8 .functor BUFZ 1, C4<z>; HiZ drive
+v000002a595f3af40_0 .net "clock", 0 0, o000002a5962471b8;  0 drivers
+E_000002a595f3b730 .event negedge, v000002a595f3af40_0;
+E_000002a595f3bf70 .event posedge, v000002a595f3af40_0;
+    .scope S_000002a596212ba0;
+T_0 ;
+    %wait E_000002a595f3bf70;
+    %load/vec4 v000002a595f3aea0_0;
+    %dup/vec4;
+    %pushi/vec4 1, 0, 1;
+    %cmp/u;
+    %jmp/1 T_0.0, 6;
+    %dup/vec4;
+    %pushi/vec4 0, 0, 1;
+    %cmp/u;
+    %jmp/1 T_0.1, 6;
+    %jmp T_0.2;
+T_0.0 ;
+    %load/vec4 v000002a595f3ad60_0;
+    %store/vec4 v000002a596212dd0_0, 0, 1;
+    %load/vec4 v000002a596212d30_0;
+    %store/vec4 v000002a596212f10_0, 0, 1;
+    %load/vec4 v000002a596212e70_0;
+    %store/vec4 v000002a595f3ac20_0, 0, 1;
+    %load/vec4 v000002a596212fb0_0;
+    %store/vec4 v000002a595f3ae00_0, 0, 1;
+    %jmp T_0.2;
+T_0.1 ;
+    %load/vec4 v000002a596212e70_0;
+    %store/vec4 v000002a596212dd0_0, 0, 1;
+    %load/vec4 v000002a596212fb0_0;
+    %store/vec4 v000002a596212f10_0, 0, 1;
+    %load/vec4 v000002a595f3acc0_0;
+    %store/vec4 v000002a595f3ac20_0, 0, 1;
+    %load/vec4 v000002a595f3ad60_0;
+    %store/vec4 v000002a595f3ae00_0, 0, 1;
+    %jmp T_0.2;
+T_0.2 ;
+    %pop/vec4 1;
+    %jmp T_0;
+    .thread T_0;
+    .scope S_000002a596212ba0;
+T_1 ;
+    %wait E_000002a595f3b730;
+    %load/vec4 v000002a596212dd0_0;
+    %store/vec4 v000002a596212d30_0, 0, 1;
+    %load/vec4 v000002a596212f10_0;
+    %store/vec4 v000002a596212e70_0, 0, 1;
+    %load/vec4 v000002a595f3ac20_0;
+    %store/vec4 v000002a596212fb0_0, 0, 1;
+    %load/vec4 v000002a595f3ae00_0;
+    %store/vec4 v000002a595f3acc0_0, 0, 1;
+    %jmp T_1;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "BDSR4bit.v";

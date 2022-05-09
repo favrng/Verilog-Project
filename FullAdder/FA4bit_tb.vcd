@@ -1,0 +1,654 @@
+$date
+	Tue Sep 07 21:14:57 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module FA4bit_tb $end
+$var wire 4 ! S [3:0] $end
+$var wire 1 " Co $end
+$var reg 4 # A [3:0] $end
+$var reg 4 $ B [3:0] $end
+$var reg 1 % Cin $end
+$var integer 32 & i [31:0] $end
+$scope module uut $end
+$var wire 4 ' A [3:0] $end
+$var wire 4 ( B [3:0] $end
+$var wire 1 % Cin $end
+$var wire 4 ) S [3:0] $end
+$var wire 1 " Co $end
+$var wire 3 * C [3:1] $end
+$scope module fa0 $end
+$var wire 1 + A $end
+$var wire 1 , B $end
+$var wire 1 % C $end
+$var wire 1 - C1 $end
+$var wire 1 . C2 $end
+$var wire 1 / S1 $end
+$var wire 1 0 carry $end
+$var wire 1 1 sum $end
+$upscope $end
+$scope module fa1 $end
+$var wire 1 2 A $end
+$var wire 1 3 B $end
+$var wire 1 4 C $end
+$var wire 1 5 C1 $end
+$var wire 1 6 C2 $end
+$var wire 1 7 S1 $end
+$var wire 1 8 carry $end
+$var wire 1 9 sum $end
+$upscope $end
+$scope module fa2 $end
+$var wire 1 : A $end
+$var wire 1 ; B $end
+$var wire 1 < C $end
+$var wire 1 = C1 $end
+$var wire 1 > C2 $end
+$var wire 1 ? S1 $end
+$var wire 1 @ carry $end
+$var wire 1 A sum $end
+$upscope $end
+$scope module fa3 $end
+$var wire 1 B A $end
+$var wire 1 C B $end
+$var wire 1 D C $end
+$var wire 1 E C1 $end
+$var wire 1 F C2 $end
+$var wire 1 G S1 $end
+$var wire 1 " carry $end
+$var wire 1 H sum $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0H
+0G
+0F
+0E
+0D
+0C
+0B
+0A
+0@
+0?
+0>
+0=
+0<
+0;
+0:
+09
+08
+07
+06
+05
+04
+03
+02
+01
+00
+0/
+0.
+0-
+0,
+0+
+b0 *
+b0 )
+b0 (
+b0 '
+b0 &
+0%
+b0 $
+b0 #
+0"
+b0 !
+$end
+#10
+19
+14
+b1 *
+10
+1.
+1A
+1/
+1?
+b110 !
+b110 )
+01
+1,
+1:
+b1 &
+1%
+b1 $
+b1 (
+b100 #
+b100 '
+#20
+1"
+1F
+1D
+1@
+0A
+1>
+1<
+b111 *
+18
+0H
+11
+0.
+b1 !
+b1 )
+09
+16
+1G
+0/
+1-
+17
+1;
+1C
+1+
+12
+0:
+b10 &
+b1101 $
+b1101 (
+b11 #
+b11 '
+#30
+1D
+1@
+0A
+1>
+1<
+18
+09
+16
+14
+0"
+01
+1.
+b111 *
+10
+b1000 !
+b1000 )
+1H
+0F
+1/
+0-
+0G
+0,
+13
+0;
+0C
+02
+1:
+b11 &
+b10 $
+b10 (
+b101 #
+b101 '
+#40
+1"
+1A
+0>
+b100 !
+b100 )
+0H
+1F
+0?
+1=
+1G
+1;
+1B
+b100 &
+b110 $
+b110 (
+b1101 #
+b1101 '
+#50
+0A
+0<
+b101 *
+08
+19
+06
+b1010 !
+b1010 )
+1H
+0F
+07
+0G
+1E
+03
+1C
+b101 &
+b1100 $
+b1100 (
+#60
+0A
+0<
+08
+04
+19
+06
+0"
+b100 *
+00
+17
+0E
+b1011 !
+b1011 )
+11
+0.
+1,
+0C
+0+
+12
+0B
+b110 &
+0%
+b101 $
+b101 (
+b110 #
+b110 '
+#70
+1A
+1<
+18
+09
+16
+14
+b1100 !
+b1100 )
+01
+b111 *
+10
+0/
+1-
+13
+1+
+02
+b111 &
+b111 $
+b111 (
+b101 #
+b101 '
+#80
+04
+1D
+1"
+11
+00
+0A
+1>
+b110 *
+1@
+09
+06
+b1 !
+b1 )
+0H
+1F
+1/
+0-
+1?
+0=
+07
+15
+1G
+0,
+0;
+12
+1B
+b1000 &
+b10 $
+b10 (
+b1111 #
+b1111 '
+#90
+0"
+1H
+0F
+0D
+0@
+b1101 !
+b1101 )
+1A
+0>
+0<
+b0 *
+08
+05
+1,
+03
+1;
+0+
+02
+0:
+b1001 &
+b101 $
+b101 (
+b1000 #
+b1000 '
+#100
+19
+1D
+14
+1H
+1"
+0A
+1@
+b101 *
+10
+0G
+1E
+0/
+1-
+0?
+1=
+b1011 !
+b1011 )
+11
+0.
+1C
+1+
+1:
+b1010 &
+1%
+b1101 $
+b1101 (
+b1101 #
+b1101 '
+#110
+09
+1A
+04
+1<
+0D
+00
+18
+b10 *
+0@
+1H
+0F
+0"
+1/
+0-
+15
+0=
+1G
+0E
+b1101 !
+b1101 )
+11
+0,
+13
+0;
+12
+0:
+0B
+b1011 &
+0%
+b1010 $
+b1010 (
+b11 #
+b11 '
+#120
+0A
+06
+0<
+04
+19
+08
+b0 *
+00
+0/
+17
+05
+b1011 !
+b1011 )
+11
+0.
+0+
+02
+b1100 &
+1%
+b0 #
+b0 '
+#130
+1D
+1@
+14
+1>
+10
+1<
+01
+1.
+1H
+19
+b111 *
+18
+b1010 !
+b1010 )
+0A
+1/
+0G
+07
+15
+1?
+1,
+0C
+12
+1:
+b1101 &
+b11 $
+b11 (
+b110 #
+b110 '
+#140
+0D
+0"
+b11 *
+0@
+1H
+0F
+11
+0.
+b1111 !
+b1111 )
+1A
+0>
+1G
+0/
+1-
+0?
+1C
+1+
+0:
+b1110 &
+b1011 $
+b1011 (
+b11 #
+b11 '
+#150
+1"
+0H
+1F
+1D
+09
+1@
+04
+b1 !
+b1 )
+0A
+1>
+b110 *
+00
+1?
+0-
+0,
+1;
+0+
+b1111 &
+b1110 $
+b1110 (
+b10 #
+b10 '
+#160
+19
+14
+b111 *
+10
+1-
+b10 !
+b10 )
+01
+1,
+0;
+0C
+1+
+1:
+1B
+b10000 &
+0%
+b11 $
+b11 (
+b1111 #
+b1111 '
+#170
+0D
+0@
+1A
+0>
+0<
+04
+19
+06
+08
+b110 !
+b110 )
+0H
+0F
+b0 *
+00
+17
+05
+0G
+1E
+0-
+0,
+03
+1;
+1C
+0+
+0:
+b10001 &
+b1100 $
+b1100 (
+b1010 #
+b1010 '
+#180
+11
+0A
+b1011 !
+b1011 )
+1H
+0"
+1/
+0?
+1G
+0E
+1,
+0;
+0C
+b10010 &
+b1 $
+b1 (
+#190
+14
+0H
+1"
+19
+b1 *
+10
+0G
+1E
+07
+b10 !
+b10 )
+01
+1.
+1C
+02
+b10011 &
+1%
+b1001 $
+b1001 (
+b1000 #
+b1000 '
+#200
+1A
+1H
+09
+1<
+1D
+04
+18
+1@
+0"
+b110 *
+00
+0/
+15
+1=
+0E
+b1100 !
+b1100 )
+01
+0.
+0,
+13
+1;
+0C
+12
+1:
+0B
+b10100 &
+0%
+b110 $
+b110 (
+b110 #
+b110 '
+#210
+0H
+0D
+0<
+1A
+0>
+0@
+19
+b0 *
+08
+1"
+1?
+0=
+17
+05
+1E
+b111 !
+b111 )
+11
+0;
+1C
+02
+1B
+b10101 &
+1%
+b1010 $
+b1010 (
+b1100 #
+b1100 '
